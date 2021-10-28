@@ -1,0 +1,193 @@
+:root {
+    --clr-text: #3d3d3d;
+    --clr-primary: #067E0A;
+    --clr-accent: #5a3563;
+
+    --ff-title: sans-serif;
+    --ff-serif: "Crimson Text", serif;
+    --ff-logo: sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inheret;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: var(--ff-serif);
+    color: var(--clr-text);
+    font-size: 1.25rem;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+
+section {
+    padding: 2em 1em;
+}
+
+/* Typografi */
+
+h1, 
+h2, 
+h3, 
+h4, 
+p {
+    margin: 0;
+}
+
+h2, h3 {
+    font-family: var(--ff-title);
+    line-height: 0.8;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+p {
+    margin-bottom: 0.85em;
+}
+
+
+.section-title-small {
+    font-size: 3rem;
+}
+
+.section-title-small small {
+    font-size: 00.7em;
+    line-height: 00.7em;
+    display: block;
+}
+
+.text-primary {
+    color: var(--clr-primary);
+}
+
+.logo {
+    font-family: var(--ff-logo);
+    text-align: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+/* navigation */
+
+header {
+    padding: 1em 0 2em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.5em;
+    color: var(--clr-primary);
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--clr-accent);
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Homepage style */
+
+.hero {
+    background-color: #555;
+    background-blend-mode: multiply;
+    background-image: url(../img/rare_jeppe.jfif);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 15vh 1em;
+}
+
+.intro {
+    text-align: center;
+    padding: 3em 1em;
+}
+
+.about-us {
+    background: var(--clr-accent);
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 238, 238);
+    padding: 0;
+}
+
+.about-us__intro {
+
+    /*background-image: url(../img/money.jfif);
+    mix-blend-mode: var(--clr-accent);*/
+    padding: 3em 1em 1em;
+}
+
+.about-us__body {
+    padding: 1.5em 1em 3em;
+}
+
+.order-online {
+    background: #f0f0f0
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+}
+
+.product {
+    background: #f0f0f0;
+    padding: 1em;
+}
+
+
+/* Buttons */
+
+.btn-group { 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /*justify-content: center;*/
+}
+
+.btn {
+    padding: 1.5em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    margin: 0.5em 0;
+    border-radius: 0.35em;
+}
+
+.btn + .btn {
+    margin-left: 0.5em;
+    margin-top: ;
+}
+.btn-primary {
+    background: var(--clr-primary);
+}
